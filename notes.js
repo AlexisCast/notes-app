@@ -7,10 +7,15 @@ const getNotes = () => {
 
 const listNotes = () => {
 	const notes = loadNotes();
-	console.log(chalk.gray.inverse("Your Notes"));
-	notes.forEach((note) => {
-		console.log(note.title);
-	});
+	
+	if (notes.length > 0) {
+		console.log(chalk.gray.inverse("Your Notes"));
+		notes.forEach((note) => {
+			console.log(note.title);
+		});
+	} else {
+		console.log(chalk.red.inverse("There are no notes"));
+	}
 };
 
 const readNote = (title) => {
