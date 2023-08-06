@@ -9,7 +9,7 @@ const { argv } = require("process");
  * node app.js add --title="foo" --body="bar"
  * node app.js read --title="foo" 
  * node app.js remove --title="foo"
- * node app.js list --title="foo"
+ * node app.js list
  * node app.js inspect add --title="foo" --body="bar"
  */
 

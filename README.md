@@ -14,5 +14,5 @@ node app.js read --title="foo"
 node app.js remove --title="foo"
 ```
 ```bash
- * node app.js list --title="foo"
+ * node app.js list
 ```
